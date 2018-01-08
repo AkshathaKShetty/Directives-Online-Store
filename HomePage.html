@@ -1,0 +1,17 @@
+﻿<body ng-app="homePage" ng-controller="homePageCtrl">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="HomePageCtrl.js"></script>
+    
+    <p>
+        <button id="btnLogoutlink" ng-click="LogOut()">LogOut</button>
+    </p>
+    <div class="topnav">
+        <nav>
+            <a class="active" ui-sref="Home.Grocery">GROCERY</a>            
+            <a ui-sref="Home.Movies">MOVIES</a>            
+        </nav>
+    </div>   
+    <div ui-view></div>
+    
+</body>

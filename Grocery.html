@@ -1,0 +1,73 @@
+﻿
+<link href="StyleSheet1.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="HomePageCtrl.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+<div ng-app="myHome" ng-controller="HomePageCtrl">
+    <!--<p>
+        <button id="btnLogoutlink" ng-click="LogOut()">LogOut</button>
+    </p>-->
+    <!--<div class="topnav">
+        <nav>
+            <a class="active" href="#grocery" ng-model="myVar" ng-init="myVar = tile">Grocery</a>
+            <a href="#movies" ng-model="myVar" ng-init="myVar = tile">Movies</a>
+        </nav>
+    </div>-->
+    <div>
+        <p>
+            <span>
+                <button id="GridViewbtn" ng-model="myVar" ng-click="myVar = grid">Grid View</button>
+            </span>
+            <span><button id="TileViewbtn" ng-init="myVar = tile">Tile View</button></span>
+        </p>
+    </div>
+    <div ng-if="myVar == tile">        
+        <tileView></tileView>
+    </div>
+    <!--<div class="TileView" ng-if="myVar ==tile">
+        <div class="row">
+            <div class="col-md-2">
+                <p> Search : <input type="text" placeholder="Search Name,Price and Rating" ng-model="search" /></p>
+
+            </div>
+            <div class="col-md-2" ng-repeat="item in items|filter:search">
+                <div>
+                    <p><img ng-src="{{item.Image}}" /></p><p>Name: {{item.Name}}</p>
+                    <p>Price: {{item.Price}}</p><p>Rating: {{item.Rating}}</p><p>Hall {{item.Hall}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="myVar ==grid">
+        <div class="col-md-2">
+            // <p> Search : <input type="text" placeholder="Search Name,Price and Rating" ng-model="search" /></p>
+
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in items | filter: search">
+                        <td> {{ item.Name }} </td>
+                        <td> {{ item.Image }} </td>
+                        <td> {{ item.Price  }} </td>
+                        <td> {{ item.Rating  }} </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>-->
+</div>
+
+

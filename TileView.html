@@ -1,0 +1,14 @@
+﻿<div class="TileView" ng-if="myVar ==tile">
+    <div class="row">
+        <div class="col-md-2">
+            <p> Search : <input type="text" placeholder="Search Name,Price and Rating" ng-model="search" /></p>
+
+        </div>
+        <div class="col-md-2" ng-repeat="item in items|filter:search">
+            <div>
+                <p><img ng-src="{{item.Image}}" /></p><p>Name: {{item.Name}}</p>
+                <p>Price: {{item.Price}}</p><p>Rating: {{item.Rating}}</p><p>Hall {{item.Hall}}</p>
+            </div>
+        </div>
+    </div>
+</div>

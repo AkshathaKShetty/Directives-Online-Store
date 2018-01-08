@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<link href="StyleSheet1.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="HomePageCtrl.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+<div ng-app="myHome" ng-controller="HomePageCtrl">
+<p>
+    <button id="btnLogoutlink" ng-click="LogOut()">LogOut</button>            
+</p>
+ <div class="topnav">
+            <nav>
+                <a class="active" href="#grocery" ng-init="tileView()">Grocery</a>            
+                <a href="#movies" ng-click="tileView()">Movies</a>            
+            </nav>
+ </div> 
+<div>
+<p>
+    <span><button id="GridViewbtn" ng-click="gridView()">Grid View</button></span>
+    <span><button id="TileViewbtn" ng-init="tileView()">Tile View</button></span>
+</p>
+</div>
+<div class="TileView">
+    <div class="col-md-2">
+        <p> Search : <input type="text" placeholder="Search Name,Price and Rating" ng-model="searchText" /></p>
+          
+    </div>
+    <div class="col-md-2" ng-repeat="movie in movies|filter:search">
+            <div>
+            <p><img ng-src="{{movie.Image}}"/></p><p>Name: {{movie.Name}}</p>
+            <p>Price: {{movie.Price}}</p><p>Rating: {{movie.Rating}}</p><p>Hall {{movie.Hall}}</p>   
+            </div>
+        </div>
+           
+</div>
+</div>

@@ -1,0 +1,130 @@
+.fixed-footer{
+        width: 100%;
+        position: fixed; 
+        padding: 10px 10px 10px 80px;
+        text-align: center;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+#aloginlink,#btnLogoutlink{
+    position:absolute;
+    top:40px;
+    right:70px;
+    font:verdana,10px;
+}
+
+label{
+    font:verdana,12px;
+}
+
+input{
+    font:verdana,12px;
+}
+
+span:before{
+    content:" ";
+    display:inline-block;
+    width:32px;
+}
+
+#spanPassword:before{
+    content:" ";
+    display:inline-block;
+    width:35px;
+}
+
+#tableloginPage{
+    position: relative;
+    top: 45px;
+    width:300px;
+    padding-left: 2px;
+    border: 2px solid black;
+}
+
+.fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;                
+        padding: 10px 0;
+        color:#333;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+
+   .topnav {
+    position:relative;
+    top:10px;
+    background-color: #333;
+    overflow: hidden;
+}
+   a{      
+    float: left;
+   }
+   a.active{
+       background-color :gray;
+   }
+   a::selection
+   {
+        background-color :gray;
+   }
+  nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+  nav a:hover {
+    background-color: #111;
+}
+  
+.TileView {
+    position:relative;
+    top:70px;
+  }
+  
+.filterView {   
+    position:relative;
+    top:70px;
+    width:30px;
+    float:left;
+}
+
+#GridViewbtn{
+    position:absolute;    
+    top:150px;
+    left:10px;
+    font:verdana,10px;
+}
+
+#TileViewbtn{
+    position:absolute;    
+    top:150px;
+    left:100px;
+    font:verdana,10px;
+}
+
+.GridView {
+    position:relative;
+    //top:70px;
+  }
+  
+  table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
